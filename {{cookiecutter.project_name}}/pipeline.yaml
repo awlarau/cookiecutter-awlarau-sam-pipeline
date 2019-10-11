@@ -86,11 +86,7 @@ Resources:
             Environment: 
                 Type: LINUX_CONTAINER
                 ComputeType: BUILD_GENERAL1_LARGE
-                {% if cookiecutter.runtime == "java" %}                
-                Image: aws/codebuild/java:openjdk8 # More info on Images: https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html
-                {% else %}
-                Image: aws/codebuild/dot-net:core-2.2 # More info on Images: https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html
-                {% endif %}
+                Image: aws/codebuild/standard:2.0
                 EnvironmentVariables:
                   - 
                     Name: BUILD_OUTPUT_BUCKET

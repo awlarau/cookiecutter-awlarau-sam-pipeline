@@ -1,6 +1,7 @@
 {
     "project_name": "Name of the project",
     "bucket_name": "Bucket to use to upload pipeline build artefact",
+    "runtime" : "dotnet|java",
     "source_code_repo": [
         "CodeCommit",
         "Github"
